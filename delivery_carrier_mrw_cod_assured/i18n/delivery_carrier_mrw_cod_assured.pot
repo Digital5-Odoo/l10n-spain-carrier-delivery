@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* delivery_carrier_mrw_cod_assured
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-27 07:24+0000\n"
+"PO-Revision-Date: 2017-06-27 07:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,perc_commission:0
+msgid "COD commission (%)"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,cod_type:0
+msgid "COD type"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: view:mrw.config:delivery_carrier_mrw_cod_assured.mrw_config_form_view_inherit_payment
+msgid "Cash on Delivery"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: selection:mrw.config,cod_type:0
+msgid "Commission on destination"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: selection:mrw.config,cod_type:0
+msgid "Commission on origin"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: model:ir.model,name:delivery_carrier_mrw_cod_assured.model_mrw_config
+msgid "MRW Configuration"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,cod_payment_id:0
+msgid "Payment for COD"
+msgstr ""
+
+#. module: delivery_carrier_mrw_cod_assured
+#: model:ir.model,name:delivery_carrier_mrw_cod_assured.model_stock_picking
+msgid "Picking List"
+msgstr ""
+

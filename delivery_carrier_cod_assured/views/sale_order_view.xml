@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="sale_order_view_form_inherit_delivery_carrier_basics" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit.delivery.carrier.basics</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/form/group/group/field[@name='price_unit']" position="after">
+                	<field name="product_assured" />
+                	<field name="assured_amount" attrs="{'readonly':[('product_assured','=',False)]}"/>
+                    <field name="cod_amount" />
+                </xpath>
+            </field>
+        </record>
+
+		<!-- Tree View -->
+		<record id="sale_order_line_tree_inherit_delivery_carrier_basics" model="ir.ui.view">
+		    <field name="name">sale.order.line.tree.inherit.delivery.carrier.basics</field>
+		    <field name="inherit_id" ref="sale.view_order_line_tree"/>
+		    <field name="model">sale.order.line</field>
+		    <field name="arch" type="xml">
+		        <xpath expr="//field[@name='price_subtotal']" position="before">
+		        	<field name="product_assured" string="Assured"/>
+                	<field name="assured_amount" />
+		        </xpath>
+		    </field>
+		</record>
+
+    </data>
+</openerp>

@@ -1,0 +1,50 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* base_delivery_carrier_label_manifiesto
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-26 11:52+0000\n"
+"PO-Revision-Date: 2017-06-26 11:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_delivery_carrier_label_manifiesto
+#: view:manifest.wizard:base_delivery_carrier_label_manifiesto.manifest_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: base_delivery_carrier_label_manifiesto
+#: model:ir.model,name:base_delivery_carrier_label_manifiesto.model_manifest_wizard
+msgid "Delivery carrier manifest wizard"
+msgstr ""
+
+#. module: base_delivery_carrier_label_manifiesto
+#: view:manifest.wizard:base_delivery_carrier_label_manifiesto.manifest_wizard_form
+msgid "Get Manifest File"
+msgstr ""
+
+#. module: base_delivery_carrier_label_manifiesto
+#: model:ir.actions.act_window,name:base_delivery_carrier_label_manifiesto.manifest_wizard_action
+#: model:ir.ui.menu,name:base_delivery_carrier_label_manifiesto.manifest_wizard_menu
+#: view:manifest.wizard:base_delivery_carrier_label_manifiesto.manifest_wizard_form
+msgid "Manifest"
+msgstr ""
+
+#. module: base_delivery_carrier_label_manifiesto
+#: code:addons/base_delivery_carrier_label_manifiesto/wizard/manifest_wizard.py:57
+#, python-format
+msgid "Manifest not implemented for '%s' carrier type."
+msgstr ""
+
+#. module: base_delivery_carrier_label_manifiesto
+#: view:manifest.wizard:base_delivery_carrier_label_manifiesto.manifest_wizard_form
+msgid "or"
+msgstr ""
+

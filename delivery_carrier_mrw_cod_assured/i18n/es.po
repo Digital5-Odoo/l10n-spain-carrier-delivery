@@ -1,0 +1,202 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * delivery_carrier_mrw_cod_assured
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-27 07:24+0000\n"
+"PO-Revision-Date: 2017-06-27 09:40+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.3\n"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,perc_commission:0
+msgid "COD commission (%)"
+msgstr "Comisión contra reembolso (%)"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,cod_type:0
+msgid "COD type"
+msgstr "Tipo de contra reembolso"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: view:mrw.config:delivery_carrier_mrw_cod_assured.mrw_config_form_view_inherit_payment
+msgid "Cash on Delivery"
+msgstr "Contra reembolso"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: selection:mrw.config,cod_type:0
+msgid "Commission on destination"
+msgstr "Comisión en destino / Portes debidos"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: selection:mrw.config,cod_type:0
+msgid "Commission on origin"
+msgstr "Comisión en origen / Portes pagados"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: model:ir.model,name:delivery_carrier_mrw_cod_assured.model_mrw_config
+msgid "MRW Configuration"
+msgstr "Configuración MRW"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: field:mrw.config,cod_payment_id:0
+msgid "Payment for COD"
+msgstr "Método de pago para el contra reembolso"
+
+#. module: delivery_carrier_mrw_cod_assured
+#: model:ir.model,name:delivery_carrier_mrw_cod_assured.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#~ msgid ""
+#~ "Commission on origin: The sender pays refund costs, Commission on "
+#~ "destination: The addressee pays the refund costs"
+#~ msgstr ""
+#~ "Portes pagados: paga el reembolso el que envía la mercancía, Portes "
+#~ "debidos: paga el receptor de la mercancía"
+
+#~ msgid "Accounting Code"
+#~ msgstr "Código Contable"
+
+#~ msgid "CLASSIC"
+#~ msgstr "CLASSIC"
+
+#~ msgid "COURIER"
+#~ msgstr "COURIER"
+
+#~ msgid "Carrier"
+#~ msgstr "Transportista"
+
+#~ msgid "Company"
+#~ msgstr "Compañía"
+
+#~ msgid "DOCUMENTOS"
+#~ msgstr "DOCUMENTOS"
+
+#~ msgid "ESTANDAR"
+#~ msgstr "ESTANDAR"
+
+#~ msgid ""
+#~ "Error conecting with SEUR try later:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Error conectando con SEUR inténtelo más tarde:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "Error conecting with SEUR:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Error conectando con SEUR:\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "Error sending label to SEUR\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Error enviando la etiqueta a SEUR\n"
+#~ "%s"
+
+#~ msgid "FRIO"
+#~ msgstr "FRIO"
+
+#~ msgid "File type"
+#~ msgstr "Tipo de archivo"
+
+#~ msgid "Franchise Code"
+#~ msgstr "Código de franquicia"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "INTERNACIONAL A"
+#~ msgstr "INTERNACIONAL A"
+
+#~ msgid "INTERNACIONAL T"
+#~ msgstr "INTERNACIONAL T"
+
+#~ msgid "Integration Code"
+#~ msgstr "Código de integración"
+
+#~ msgid "MARITIMO"
+#~ msgstr "MARITIMO"
+
+#~ msgid "MISMO DIA"
+#~ msgstr "MISMO DIA"
+
+#~ msgid "MULTI BOX"
+#~ msgstr "MULTI BOX"
+
+#~ msgid "MULTI DOC"
+#~ msgstr "MULTI DOC"
+
+#~ msgid "MULTIPACK"
+#~ msgstr "MULTIPACK"
+
+#~ msgid "NETEXPRESS"
+#~ msgstr "NETEXPRESS"
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgid "No SEUR Config defined in carrier"
+#~ msgstr "No SEUR Config defined in carrier"
+
+#~ msgid "Password"
+#~ msgstr "Contraseña"
+
+#~ msgid "Please define an address in the %s warehouse"
+#~ msgstr "Por favor defina una dirección en el almacén %s"
+
+#~ msgid "S-48"
+#~ msgstr "S-48"
+
+#~ msgid "SEUR"
+#~ msgstr "SEUR"
+
+#~ msgid "SEUR - 10"
+#~ msgstr "SEUR - 10"
+
+#~ msgid "SEUR - 24"
+#~ msgstr "SEUR - 24"
+
+#~ msgid "SEUR - 72"
+#~ msgstr "SEUR - 72"
+
+#~ msgid "SEUR 13:30"
+#~ msgstr "SEUR 13:30"
+
+#~ msgid "SEUR 8:30"
+#~ msgstr "SEUR 8:30"
+
+#~ msgid "SEUR Config"
+#~ msgstr "Configuración SEUR"
+
+#~ msgid "Seur Product Code"
+#~ msgstr "Código de producto de Seur"
+
+#~ msgid "Seur Service Code"
+#~ msgstr "Código de servicio de Seur"
+
+#~ msgid "Shipping Label"
+#~ msgstr "Etiqueta de envío"
+
+#~ msgid "Username"
+#~ msgstr "Usuario"
+
+#~ msgid "VAT"
+#~ msgstr "CIF"
+
+#~ msgid "{'invisible': [('carrier_type', '=', 'seur')]}"
+#~ msgstr "{'invisible': [('carrier_type', '=', 'seur')]}"
+
+#~ msgid "{'invisible': [('type', '=', 'seur')]}"
+#~ msgstr "{'invisible': [('type', '=', 'seur')]}"

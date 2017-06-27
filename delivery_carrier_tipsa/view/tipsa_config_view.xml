@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="tipsa_config_tree_view" model="ir.ui.view">
+            <field name="name">tipsa.config.tree</field>
+            <field name="model">tipsa.config</field>
+            <field name="arch" type="xml">
+                <tree string="Tipsa Config" version="7.0">
+                    <field name="name"/>
+                    <field name="is_test"/>
+                    <field name="agency_code"/>
+                    <field name="customer_code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="tipsa_config_form_view" model="ir.ui.view">
+            <field name="name">tipsa.config.form</field>
+            <field name="model">tipsa.config</field>
+            <field name="arch" type="xml">
+                <form string="Tipsa Config" version="7.0">
+                    <sheet string="Tipsa Config">
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="agency_code"/>
+                                <field name="customer_code"/>
+                                <field name="customer_password" password="True"/>
+                                <field name="report_format"/>
+                            </group>
+                            <group>
+                                <field name="is_test" class="oe_inline"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tipsa_config_action" model="ir.actions.act_window">
+            <field name="name">Tipsa</field>
+            <field name="res_model">tipsa.config</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tipsa_config_tree_view"/>
+        </record>
+
+        <menuitem id="tipsa_config_menu" parent="base_delivery_carrier_label.menu_carriers_config"
+            action="tipsa_config_action" sequence="20"/>
+
+    </data>
+</openerp>

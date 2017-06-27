@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="seur_config_form_view_inherit_payment" model="ir.ui.view">
+            <field name="name">seur_config_form_view_inherit_payment</field>
+            <field name="model">seur.config</field>
+            <field name="inherit_id" ref="delivery_carrier_seur.seur_config_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group" position="inside">
+                    <group string="Cash on Delivery">
+                        <group>
+                            <field name="cod_type"/>
+                            <field name="cod_payment_id" attrs="{'invisible':[('cod_type','=',False)]}"/>
+                        </group>
+                        <group>
+                            <field name="perc_commission" attrs="{'invisible':[('cod_type','=',False)]}"/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>
