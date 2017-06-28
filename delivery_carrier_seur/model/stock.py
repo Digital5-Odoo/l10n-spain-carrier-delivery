@@ -92,7 +92,7 @@ class StockPicking(models.Model):
         if not self.picking_type_id.warehouse_id.partner_id:
             raise exceptions.Warning(
                 _('Please define an address in the %s warehouse') % (
-                    self.warehouse_id.name))
+                    self.picking_type_id.warehouse_id.name))
 
         config = self.carrier_id.seur_config_id
 
