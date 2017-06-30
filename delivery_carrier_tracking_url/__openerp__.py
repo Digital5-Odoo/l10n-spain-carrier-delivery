@@ -4,7 +4,7 @@
     "name": "Tracking url in delivery carrier",
     "version": "0.1",
     "author": "Digital5, S.L.",
-    "category": "",
+    "category": "Delivery",
     "description": """
 Add tracking url in delivery carrier, as to use it in emails
 """,

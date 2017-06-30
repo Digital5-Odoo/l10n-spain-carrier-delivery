@@ -4,7 +4,7 @@
     "name": "Multi address for delivery carrier SEUR",
     "version": "0.1",
     "author": "Digital5, S.L.",
-    "category": "",
+    "category": "Delivery",
     "description": """
 Simple module to relate multi address (stock-logistics-transport) in SEUR carrier
 ================================================================================

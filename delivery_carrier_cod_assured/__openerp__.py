@@ -4,7 +4,7 @@
     "name": "COD and assured amount for delivery carriers",
     "version": "0.0.1",
     "author": "Digital5, S.L.",
-    "category": "",
+    "category": "Delivery",
     "website": "http://www.digita5.es",
     "license": "",
     "depends": [

@@ -18,7 +18,7 @@
     'name': 'COD and assured amount in MRW Deliveries WebService',
     'version': '0.0.1',
     'author': "Digital5 S.L.",
-    'category': 'Sales Management',
+    'category': 'Delivery',
     'depends': [
         'delivery_carrier_mrw',
         'delivery_carrier_cod_assured',

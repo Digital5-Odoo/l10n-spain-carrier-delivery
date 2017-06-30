@@ -22,7 +22,7 @@
     'name': 'MRW Deliveries WebService',
     'version': '0.1',
     'author': "Factor Libre",
-    'category': 'Sales Management',
+    'category': 'Delivery',
     'depends': [
         "delivery",
         "base_delivery_carrier_label_manifiesto",

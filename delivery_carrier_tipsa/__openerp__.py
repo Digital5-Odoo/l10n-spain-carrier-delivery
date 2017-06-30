@@ -21,9 +21,9 @@
 ##############################################################################
 {
     'name': 'Tipsa Deliveries WebService',
-    'version': '0.1',
+    'version': '0.0.1',
     'author': "FactorLibre",
-    'category': 'Sales Management',
+    'category': 'Delivery',
     'depends': [
         'delivery',
         'base_delivery_carrier_label'

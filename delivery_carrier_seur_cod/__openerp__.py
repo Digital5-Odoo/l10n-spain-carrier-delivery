@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Delivery carrier Seur Payment',
+    'name': 'Delivery carrier Seur Cash On Delivery',
     'version': '0.0.1',
-    'category': 'Extra Tools',
+    'category': 'Delivery',
     'author': 'Digital5, S.L.',
     'depends': [
         'delivery_carrier_seur',
