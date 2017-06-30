@@ -37,7 +37,7 @@ class ManifestWizard(models.TransientModel):
                 config.password,
                 config.vat,
                 config.franchise_code,
-                'Odoo',  # seurid
+                config.seurid or 'Odoo',  # seurid
                 config.integration_code,
                 config.accounting_code
             )
