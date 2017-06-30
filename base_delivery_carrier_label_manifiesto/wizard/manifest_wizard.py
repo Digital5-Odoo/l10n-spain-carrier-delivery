@@ -54,5 +54,9 @@ class ManifestWizard(models.Model):
 
     @api.one
     def get_manifest_file(self):
-        raise exceptions.Warning(_("Manifest not implemented for '%s' "
-                                   "carrier type.") % self.carrier_type)
+        if self.carrier_type:
+            raise exceptions.Warning(
+                _("Manifest not implemented for '%s' carrier type.") % self.carrier_type)
+        else:
+            raise exceptions.Warning(
+                _("There is no carrier type in carrier '%s'.") % self.carrier_id.name)
