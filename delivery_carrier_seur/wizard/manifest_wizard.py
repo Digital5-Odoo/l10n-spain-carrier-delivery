@@ -19,7 +19,10 @@
 #
 ##############################################################################
 from openerp import fields, models, api, exceptions, _
-from seur.picking import Picking
+try:
+    from seur.picking import Picking
+except ImportError:
+    _logger.debug('Can not `from seur.picking import Picking`.')
 from urllib2 import HTTPError
 
 
