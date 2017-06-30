@@ -41,6 +41,8 @@ To configure this module, you need to:
 Usage
 =====
 
+Install the library in lib. The difference with the one in pip is minimal and should dissappear, but just in case.
+
 You have to set Seur carrier in the stock picking you want to ship:
  * In the stock picking form go to *Additional Info* tab and choose Seur as carrier and the service and product code. You only be able to choose this if the state of the picking is 'Ready to Transfer.
  * When the picking is 'Transferred', it appears a *Create Shipping Label* button. Just push it, and if all went well the label will be 'attached'
@@ -59,7 +61,7 @@ This module allows to:
 TODO
 ----
 
- * Cash on delivery
+ * Confluence with the pip library by Zikzakmedia
  * Edit/delete delivery tracking
  * Customs management
  * ...
@@ -67,13 +69,9 @@ TODO
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues <https://github.com/OCA/
-carrier-delivery/issues>`_.
+Bugs are tracked on `GitHub Issues <https://github.com/OCA/l10n-spain-carrier-delivery/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
-If you spotted it first, help us smashing it by providing a detailed and welcomed feedback `here <https://github.com/OCA/
-carrier-delivery/issues/new?body=module:%20
-delivery_carrier_seur%0Aversion:%20
-8.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+If you spotted it first, help us smashing it by providing a detailed and welcomed feedback `here <https://github.com/Digital5-Odoo/l10n-spain-carrier-delivery/issues/new>`_.
 
 
 Credits
