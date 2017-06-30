@@ -50,9 +50,7 @@ class ManifestWizard(models.TransientModel):
                 raise exceptions.Warning(
                     _('Error conecting with SEUR try later:\n%s' % e))
 
-            data = {
-                'date': fields.Datetime.from_string(self.from_date)
-            }
+            data = {'date': 'T'.join(self.from_date.split(' ')) + 'Z'}
 
             manifiesto = False
             try:
