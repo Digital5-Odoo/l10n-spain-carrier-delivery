@@ -19,11 +19,13 @@
 #
 ##############################################################################
 from openerp import fields, models, api, exceptions, _
+from urllib2 import HTTPError
+import logging
+_logger = logging.getLogger(__name__)
 try:
     from seur.picking import Picking
 except ImportError:
     _logger.debug('Can not `from seur.picking import Picking`.')
-from urllib2 import HTTPError
 
 
 class ManifestWizard(models.TransientModel):
