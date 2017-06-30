@@ -110,7 +110,7 @@ class StockPicking(models.Model):
             config.password,
             config.vat,
             config.franchise_code,
-            'Odoo',  # seurid
+            config.seurid or 'Odoo',  # seurid
             config.integration_code,
             config.accounting_code,
             seur_context
