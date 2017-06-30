@@ -173,8 +173,8 @@ class StockPicking(models.Model):
             'clave_reembolso': '',
             'valor_reembolso': '',
             'cliente_nombre': unidecode(partner.name),
-            'cliente_direccion': unidecode(partner.street +
-                                           (' ' + partner.street2 or '')),
+            'cliente_direccion': unidecode(partner.street + ' ' +
+                                           (partner.street2 or '')),
             'cliente_tipovia': 'CL',
             'cliente_tnumvia': 'N',
             'cliente_numvia': ' ',
