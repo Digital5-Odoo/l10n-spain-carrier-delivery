@@ -4,7 +4,7 @@
       <det:generacionPDFDetallePorFecha>
         <det:in0>${vat}</det:in0>
         <det:in1>${franchise}</det:in1>
-        <det:in2>${date}T00:00:00:000Z</det:in2>
+        <det:in2>${date}</det:in2>
         <det:in3>${username}</det:in3>
         <det:in4>${password}</det:in4>
       </det:generacionPDFDetallePorFecha>
