@@ -1,377 +1,350 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#   * delivery_carrier_seur
+#	* delivery_carrier_seur
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-04 10:34+0000\n"
-"PO-Revision-Date: 2017-07-04 12:36+0100\n"
+"PO-Revision-Date: 2017-07-04 10:34+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 1.5.3\n"
 
 #. module: delivery_carrier_seur
 #: field:seur.config,accounting_code:0
 msgid "Accounting Code"
-msgstr "Código Contable"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 #: selection:delivery.carrier,seur_service_code:0
 msgid "CLASSIC"
-msgstr "CLASSIC"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "COURIER"
-msgstr "COURIER"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: model:ir.model,name:delivery_carrier_seur.model_delivery_carrier
 msgid "Carrier"
-msgstr "Transportista"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,create_uid:0
 msgid "Created by"
-msgstr "Creado por"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,create_date:0
 msgid "Created on"
-msgstr "Created on"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "DOCUMENTOS"
-msgstr "DOCUMENTOS"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: model:ir.model,name:delivery_carrier_seur.model_manifest_wizard
 msgid "Delivery carrier manifest wizard"
-msgstr "Wizard Manifiesto transportista"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,display_name:0
 msgid "Display Name"
-msgstr "Nombre"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "ESTANDAR"
-msgstr "ESTÁNDAR"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/wizard/manifest_wizard.py:56
-#, fuzzy, python-format
-msgid ""
-"Error conecting with SEUR try later:\n"
+#, python-format
+msgid "Error conecting with SEUR try later:\n"
 "%s"
 msgstr ""
-"Error conectando con SEUR inténtelo más tarde:\n"
-"%s"
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:124
 #: code:addons/delivery_carrier_seur/wizard/manifest_wizard.py:53
-#, fuzzy, python-format
-msgid ""
-"Error conecting with SEUR:\n"
+#, python-format
+msgid "Error conecting with SEUR:\n"
 "%s"
 msgstr ""
-"Error conectando con SEUR:\n"
-"%s"
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:127
 #, python-format
-msgid ""
-"Error connecting with SEUR try later:\n"
+msgid "Error connecting with SEUR try later:\n"
 "%s"
 msgstr ""
-"Error conectando con SEUR inténtelo más tarde:\n"
-"%s"
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/wizard/manifest_wizard.py:65
 #, python-format
-msgid ""
-"Error generating SEUR manifest:\n"
+msgid "Error generating SEUR manifest:\n"
 "%s"
 msgstr ""
-"Error generando el manifiesto de SEUR:\n"
-"%s"
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:134
 #, python-format
-msgid ""
-"Error sending label to SEUR\n"
+msgid "Error sending label to SEUR\n"
 "%s"
 msgstr ""
-"Error enviando la etiqueta a SEUR\n"
-"%s"
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "FRIO"
-msgstr "FRÍO"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,file_type:0
 msgid "File type"
-msgstr "Tipo de archivo"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,franchise_code:0
 msgid "Franchise Code"
-msgstr "Código de franquicia"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,id:0
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "INTERNACIONAL A"
-msgstr "INTERNACIONAL A"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "INTERNACIONAL T"
-msgstr "INTERNACIONAL T"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,seurid:0
 msgid "Identifier"
-msgstr "Identificador"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: help:seur.config,seurid:0
-msgid ""
-"Identifier for the sending process, useful to trace the functionality in "
-"deployment."
+msgid "Identifier for the sending process, useful to trace the functionality in deployment."
 msgstr ""
-"Identificador para el proceso de envío, útil para comprobar la funcionalidad "
-"durante la implantación."
 
 #. module: delivery_carrier_seur
 #: field:seur.config,integration_code:0
 msgid "Integration Code"
-msgstr "Código de integración"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,__last_update:0
-#, fuzzy
 msgid "Last Modified on"
-msgstr "Última actualización"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,write_uid:0
 msgid "Last Updated by"
-msgstr "Actualizado por"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,write_date:0
 msgid "Last Updated on"
-msgstr "Última actualización"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "MARITIMO"
-msgstr "MARITIMO"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "MISMO DIA"
-msgstr "MISMO DIA"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "MULTI BOX"
-msgstr "MULTI BOX"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "MULTI DOC"
-msgstr "MULTI DOC"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "MULTIPACK"
-msgstr "MULTIPACK"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "NETEXPRESS"
-msgstr "NETEXPRESS"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,name:0
 msgid "Name"
-msgstr "Nombre"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:91
 #, python-format
 msgid "No SEUR Config defined in carrier"
-msgstr "Configuración de SEUR no definida en el transportista"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:seur.config,file_type:0
 msgid "PDF"
-msgstr "PDF"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,password:0
 msgid "Password"
-msgstr "Contraseña"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: model:ir.model,name:delivery_carrier_seur.model_stock_picking
 msgid "Picking List"
-msgstr "Albarán"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:94
 #, python-format
 msgid "Please define an address in the %s warehouse"
-msgstr "Por favor defina una dirección en el almacén %s"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:150
-#, fuzzy, python-format
+#, python-format
 msgid "Please select SEUR service and product codes in picking"
 msgstr ""
-"Por favor, seleccione los códigos de servicio y producto de SEUR en el "
-"albarán"
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:200
 #, python-format
 msgid "Please, enter a %s for %s"
-msgstr "Por favor, introduzca %s para %s"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "S-48"
-msgstr "S-48"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: model:ir.actions.act_window,name:delivery_carrier_seur.seur_config_action
 #: model:ir.ui.menu,name:delivery_carrier_seur.seur_config_menu
 msgid "SEUR"
-msgstr "SEUR"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "SEUR - 10"
-msgstr "SEUR - 10"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "SEUR - 24"
-msgstr "SEUR - 24"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "SEUR - 72"
-msgstr "SEUR - 72"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "SEUR 13:30"
-msgstr "SEUR 13:30"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_service_code:0
 msgid "SEUR 8:30"
-msgstr "SEUR 8:30"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:delivery.carrier,seur_config_id:0
 #: view:seur.config:delivery_carrier_seur.seur_config_form_view
 #: view:seur.config:delivery_carrier_seur.seur_config_tree_view
 msgid "SEUR Config"
-msgstr "Configuración SEUR"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:delivery.carrier,seur_product_code:0
 #: field:stock.picking,seur_product_code:0
 msgid "Seur Product Code"
-msgstr "Código de producto de Seur"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:delivery.carrier,seur_service_code:0
 #: field:stock.picking,seur_service_code:0
 msgid "Seur Service Code"
-msgstr "Código de servicio de Seur"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: model:ir.model,name:delivery_carrier_seur.model_shipping_label
 msgid "Shipping Label"
-msgstr "Etiqueta de envío"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:seur.config,file_type:0
 msgid "TXT"
-msgstr "TXT"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: help:seur.config,timeout:0
-msgid ""
-"Time in seconds, to determine whether the webservice is responding or not."
+msgid "Time in seconds, to determine whether the webservice is responding or not."
 msgstr ""
-"Tiempo en segundos para determinar si el webservice está respondiendo o no."
 
 #. module: delivery_carrier_seur
 #: field:seur.config,timeout:0
 msgid "Timeout"
-msgstr "Timeout"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,username:0
 msgid "Username"
-msgstr "Usuario"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: field:seur.config,vat:0
 msgid "VAT"
-msgstr "CIF"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: selection:delivery.carrier,seur_product_code:0
 msgid "VINO"
-msgstr "VINO"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:188
 #, python-format
 msgid "ZIP"
-msgstr "ZIP"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: code:addons/delivery_carrier_seur/model/stock.py:188
 #, python-format
 msgid "partner"
-msgstr "partner"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: view:stock.picking:delivery_carrier_seur.view_picking_withcarrier_out_form
 msgid "{'invisible': [('carrier_type', '=', 'seur')]}"
-msgstr "{'invisible': [('carrier_type', '=', 'seur')]}"
+msgstr ""
 
 #. module: delivery_carrier_seur
 #: view:delivery.carrier:delivery_carrier_seur.view_delivery_carrier_form
 msgid "{'invisible': [('type', '=', 'seur')]}"
-msgstr "{'invisible': [('type', '=', 'seur')]}"
+msgstr ""
 
-#~ msgid "Company"
-#~ msgstr "Compañía"
