@@ -31,6 +31,7 @@
                                 <field name="accounting_code"/>
                                 <field name="franchise_code"/>
                                 <field name="seurid"/>
+                                <field name="timeout"/>
                             </group>
                             <group>
                                 <field name="username"/>

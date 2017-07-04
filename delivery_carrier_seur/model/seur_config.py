@@ -47,3 +47,4 @@ class SeurConfig(models.Model):
         'Identifier', required=True, default='Odoo',
         help='Identifier for the sending process, useful to trace the functionality in deployment.'
     )
+    timeout = fields.Integer(string='Timeout', required=True, default=10)

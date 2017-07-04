@@ -113,6 +113,7 @@ class StockPicking(models.Model):
             config.seurid or 'Odoo',  # seurid
             config.integration_code,
             config.accounting_code,
+            config.timeout,
             seur_context
         )
 
