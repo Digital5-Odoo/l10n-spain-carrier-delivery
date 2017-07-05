@@ -39,16 +39,19 @@ class StockPicking(models.Model):
                 cod_amount = line.cod_amount
                 if not cod_amount:  # if not specified the cod amount, we take the total
                     price = line._calc_line_base_price(line)
-                    taxes = line.tax_id.compute_all(price, qty,
+                    taxes = line.tax_id.compute_all(price, line.product_uom_qty,
                                             line.product_id,
                                             line.order_id.partner_id)
                     cur = line.order_id.pricelist_id.currency_id
-                    for tax in taxes['taxes']:
-                        cod_amount += cur.round(tax.get('amount', 0.0))
+                    cod_amount += cur.round(taxes.get('total_included', 0.0))
                 amount_assured += cur.round(line.assured_amount * qty)
-                amount_cod += cur.round(cod_amount * qty)
+                amount_cod += cur.round(cod_amount / line.product_uom_qty * qty)
         self.amount_assured = amount_assured
         self.amount_cod = amount_cod
 
-    amount_assured = fields.Float(string='Assured Total', digits=dp.get_precision('Account'), readonly=True, compute='_amount_all')
-    amount_cod = fields.Float(string='Cash on Delivery Total', digits=dp.get_precision('Account'), readonly=True, compute='_amount_all')
+    amount_assured = fields.Float(
+        string='Assured Total', digits=dp.get_precision('Account'),
+        readonly=True, compute='_amount_all')
+    amount_cod = fields.Float(
+        string='Cash on Delivery Total', digits=dp.get_precision('Account'),
+        readonly=True, compute='_amount_all')
