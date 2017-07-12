@@ -22,6 +22,7 @@
     'depends': [
         'delivery_carrier_mrw',
         'delivery_carrier_cod_assured',
+        'account_payment',
     ],
     'data': [
         'view/mrw_config_view.xml',

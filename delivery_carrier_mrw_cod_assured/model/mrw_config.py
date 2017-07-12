@@ -26,5 +26,5 @@ class MrwConfig(models.Model):
                 ('O', 'Commission on origin'),
                 ('D', 'Commission on destination'),
             ], string='COD type', track_visibility='onchange')
-    cod_payment_id = fields.Many2one('payment.method', string='Payment for COD')
+    cod_payment_mode_id = fields.Many2one('payment.mode', string='Payment for COD')
     perc_commission = fields.Float(string='COD commission (%)')

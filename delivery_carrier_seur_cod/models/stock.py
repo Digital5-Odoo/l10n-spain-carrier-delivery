@@ -27,7 +27,7 @@ class StockPicking(models.Model):
     
     def _get_label_data(self):
         data = super(StockPicking, self)._get_label_data()
-        if self.sale_id and self.sale_id.payment_method_id == self.carrier_id.seur_config_id.cod_payment_id:
+        if self.sale_id and self.sale_id.payment_mode_id == self.carrier_id.seur_config_id.cod_payment_mode_id:
             data['clave_reembolso'] = self.carrier_id.seur_config_id.cod_type
             if self.carrier_id.seur_config_id.cod_type == "D":
                 data['valor_reembolso'] = str(self.amount_cod)

@@ -8,6 +8,7 @@
     'depends': [
         'delivery_carrier_seur',
         'delivery_carrier_cod_assured',
+        'account_payment',
     ],
     'website': 'http://www.digital5.es',
     'data': [

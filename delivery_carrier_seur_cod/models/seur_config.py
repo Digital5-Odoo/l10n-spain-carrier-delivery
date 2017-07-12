@@ -29,5 +29,5 @@ class SeurConfig(models.Model):
     ], string='COD type', track_visibility='onchange',
         help="Commission on origin: The sender pays refund costs, "
              "Commission on destination: The addressee pays the refund costs")
-    cod_payment_id = fields.Many2one('payment.method', string='Payment for COD')
+    cod_payment_mode_id = fields.Many2one('payment.mode', string='Payment for COD')
     perc_commission = fields.Float(string='COD commission (%)')

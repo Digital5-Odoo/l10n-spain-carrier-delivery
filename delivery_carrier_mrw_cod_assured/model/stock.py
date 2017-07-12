@@ -34,7 +34,7 @@ class StockPicking(models.Model):
         transm_envio = super(StockPicking, self)._mrw_transm_envio_request(mrw_api)
         service_data = transm_envio.DatosServicio
         
-        if self.sale_id and self.sale_id.payment_method_id == self.carrier_id.mrw_config_id.cod_payment_id:
+        if self.sale_id and self.sale_id.payment_mode_id == self.carrier_id.mrw_config_id.cod_payment_mode_id:
             service_data.Reembolso = self.carrier_id.mrw_config_id.cod_type
             if self.carrier_id.mrw_config_id.cod_type == "D":
                 service_data.ImporteReembolso = str(self.amount_cod).replace(".", ",")
