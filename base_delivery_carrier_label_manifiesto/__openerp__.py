@@ -23,9 +23,9 @@
  'category': 'Delivery',
  'complexity': 'normal',
  'depends': ['base_delivery_carrier_label'],
- 'data': ['security/ir.model.access.csv',
-          'wizard/manifest_wizard_view.xml',
-          ],
+ 'data': [
+    'wizard/manifest_wizard_view.xml',
+    ],
  'tests': [],
  'installable': True,
  'auto_install': False,

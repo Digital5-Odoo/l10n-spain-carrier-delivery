@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_manifest_wizard_stock_user,access.manifest.wizard.stock.user,model_manifest_wizard,stock.group_stock_user,1,0,0,0
-access_manifest_wizard_stock_manager,access.manifest.wizard.stock.manager,model_manifest_wizard,stock.group_stock_manager,1,1,1,1
