@@ -35,7 +35,7 @@ class StockPicking(models.Model):
         for move in self.move_lines:
             line = move.procurement_id and move.procurement_id.sale_line_id or False
             if line:
-                qty = move.product_qty  # the qty of the move, not the one in the line
+                qty = move.product_uom_qty  # the qty of the move, not the one in the line
                 cod_amount = line.cod_amount
                 if not cod_amount:  # if not specified the cod amount, we take the total
                     price = line._calc_line_base_price(line)
