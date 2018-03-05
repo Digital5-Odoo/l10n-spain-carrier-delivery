@@ -137,6 +137,8 @@ class StockPicking(models.Model):
 
         if config.file_type == 'pdf':
             label = label.decode('base64')
+        elif config.file_type == 'txt':
+            label = label.encode('utf-8')
 
         return [{
             'name': self.name + '_' + tracking_ref + '.' + config.file_type,
