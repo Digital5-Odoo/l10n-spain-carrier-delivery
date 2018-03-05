@@ -166,7 +166,7 @@ class StockPicking(models.Model):
             'product': unidecode(self.seur_product_code),
             'total_bultos': self.number_of_packages or 1,
             'total_kilos': self.weight or '1',
-            'peso_bulto': str(self.weight_net / (self.number_of_packages or 1)) or '1',
+            'peso_bulto': (self.weight_net and str(self.weight_net / (self.number_of_packages or 1))) or '1',
             'observaciones': self.note and unidecode(self.note) or '',
             'referencia_expedicion': unidecode(self.name),
             'ref_bulto': unidecode(self.name),
