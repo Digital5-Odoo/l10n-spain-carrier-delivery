@@ -20,8 +20,8 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
-import openerp.addons.decimal_precision as dp
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
 
 
 class StockPicking(models.Model):

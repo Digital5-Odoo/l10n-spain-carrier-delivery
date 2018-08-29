@@ -21,8 +21,7 @@
 ##############################################################################
 import urllib
 from datetime import datetime
-from openerp import models, fields, api, exceptions
-from openerp.tools.translate import _
+from odoo import api, fields, models, tools, _
 from ..webservice.mrw_api import MrwEnvio
 
 import logging

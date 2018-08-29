@@ -19,8 +19,9 @@
 ##############################################################################
 import urllib
 from datetime import datetime
-from openerp import models, fields, api, exceptions
-from openerp.tools.translate import _
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 
 import logging
 _logger = logging.getLogger(__name__)

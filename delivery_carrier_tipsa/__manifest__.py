@@ -1,4 +1,9 @@
+# -*- coding: utf-8 -*-
 ##############################################################################
+#
+#    OpenERP, Open Source Management Solution
+#    Copyright (C) 2015 FactorLibre (http://www.factorlibre.com)
+#                  Hugo Santos <hugo.santos@factorlibre.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -15,20 +20,25 @@
 #
 ##############################################################################
 {
-    'name': 'COD and assured amount in MRW Deliveries WebService',
-    'version': '0.0.1',
-    'author': "Digital5 S.L.",
+    'name': 'Tipsa Deliveries WebService',
+    'version': '11.0.0.0.1',
+    'author': "FactorLibre",
     'category': 'Delivery',
     'depends': [
-        'delivery_carrier_mrw',
-        'delivery_carrier_cod_assured',
-        'account_payment',
+        'delivery',
+        'base_delivery_carrier_label'
     ],
+    'website': 'http://factorlibre.com',
     'data': [
-        'view/mrw_config_view.xml',
+        'security/ir.model.access.csv',
+        'view/tipsa_config_view.xml',
+        'view/delivery_view.xml',
+        'view/stock_view.xml'
     ],
-    'demo': [],
     'installable': True,
     'auto_install': False,
     'license': 'AGPL-3',
+    'external_dependencies': {
+        'python': ['suds'],
+    }
 }

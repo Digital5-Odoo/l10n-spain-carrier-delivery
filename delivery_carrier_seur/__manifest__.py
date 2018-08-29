@@ -4,7 +4,7 @@
 {
     "name": "Seur Deliveries WebService",
     "summary": "Allows to generate shipping label for SEUR shipments.",
-    "version": "8.0.1.0.0",
+    "version": "11.0.1.0.0",
     "category": "Delivery",
     "website": "http://factorlibre.com",
     "author": "FactorLibre, Odoo Community Association (OCA)",

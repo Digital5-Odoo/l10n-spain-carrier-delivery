@@ -18,10 +18,12 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from openerp import models, fields, api, exceptions, _
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 
 
-class ManifestWizard(models.Model):
+class ManifestWizard(models.TransientModel):
     _name = 'manifest.wizard'
     _description = 'Delivery carrier manifest wizard'
 
@@ -37,7 +39,7 @@ class ManifestWizard(models.Model):
         required=True
     )
     carrier_type = fields.Selection(
-        related='carrier_id.type',
+        related='carrier_id.delivery_type',
         string='Carrier Type',
         readonly=True,
     )
@@ -55,8 +57,8 @@ class ManifestWizard(models.Model):
     @api.one
     def get_manifest_file(self):
         if self.carrier_type:
-            raise exceptions.Warning(
+            raise Warning(
                 _("Manifest not implemented for '%s' carrier type.") % self.carrier_type)
         else:
-            raise exceptions.Warning(
+            raise Warning(
                 _("There is no carrier type in carrier '%s'.") % self.carrier_id.name)

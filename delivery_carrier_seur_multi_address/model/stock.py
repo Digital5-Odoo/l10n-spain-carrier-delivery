@@ -20,7 +20,9 @@
 #
 ##############################################################################
 
-from openerp import models, api, exceptions, _
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 from unidecode import unidecode
 
 
@@ -39,7 +41,7 @@ class StockPicking(models.Model):
                            }
             for key, value in must_fields.items():
                 if not value:
-                    raise exceptions.Warning(_('%s' % key))
+                    raise Warning(_('%s' % key))
             data.update({
                 'cliente_direccion': unidecode(partner.street +
                                                ((' ' + partner.street2) or '')),

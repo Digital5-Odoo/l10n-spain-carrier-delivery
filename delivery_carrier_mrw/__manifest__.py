@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
@@ -20,21 +19,22 @@
 #
 ##############################################################################
 {
-    'name': 'Tipsa Deliveries WebService',
-    'version': '0.0.1',
-    'author': "FactorLibre",
+    'name': 'MRW Deliveries WebService',
+    'version': '11.0.0.0.1',
+    'author': "Factor Libre",
     'category': 'Delivery',
     'depends': [
-        'delivery',
-        'base_delivery_carrier_label'
+        "delivery",
+        "base_delivery_carrier_label_manifiesto",
     ],
     'website': 'http://factorlibre.com',
     'data': [
         'security/ir.model.access.csv',
-        'view/tipsa_config_view.xml',
+        'view/mrw_config_view.xml',
         'view/delivery_view.xml',
         'view/stock_view.xml'
     ],
+    'demo': [],
     'installable': True,
     'auto_install': False,
     'license': 'AGPL-3',

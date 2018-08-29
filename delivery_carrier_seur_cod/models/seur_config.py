@@ -17,7 +17,9 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 
 
 class SeurConfig(models.Model):

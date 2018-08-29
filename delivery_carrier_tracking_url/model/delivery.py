@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from openerp import models, fields, api, _
+from odoo import api, fields, models, tools, _
 
 
 class DeliveryCarrier(models.Model):

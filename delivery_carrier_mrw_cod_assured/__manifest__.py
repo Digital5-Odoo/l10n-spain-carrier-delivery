@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -15,20 +14,21 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-{'name': 'Manifiesto in Base module for carrier labels',
- 'version': '8.0.0.0.1',
- 'author': "Factor Libre",
- 'maintainer': 'Factor Libre,Odoo Community Association (OCA)',
- 'category': 'Delivery',
- 'complexity': 'normal',
- 'depends': ['base_delivery_carrier_label'],
- 'data': [
-    'wizard/manifest_wizard_view.xml',
+{
+    'name': 'COD and assured amount in MRW Deliveries WebService',
+    'version': '11.0.0.0.1',
+    'author': "Digital5 S.L.",
+    'category': 'Delivery',
+    'depends': [
+        'delivery_carrier_mrw',
+        'delivery_carrier_cod_assured',
+        'account_payment',
     ],
- 'tests': [],
- 'installable': True,
- 'auto_install': False,
- 'license': 'AGPL-3',
- 'application': False,
- }
+    'data': [
+        'view/mrw_config_view.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'license': 'AGPL-3',
+}

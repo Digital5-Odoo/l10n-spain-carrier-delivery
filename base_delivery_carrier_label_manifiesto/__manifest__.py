@@ -1,8 +1,5 @@
+# -*- coding: utf-8 -*-
 ##############################################################################
-#
-#    OpenERP, Open Source Management Solution
-#    Copyright (C) 2015 FactorLibre (http://www.factorlibre.com)
-#                  Hugo Santos <hugo.santos@factorlibre.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,27 +15,20 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    'name': 'MRW Deliveries WebService',
-    'version': '0.1',
-    'author': "Factor Libre",
-    'category': 'Delivery',
-    'depends': [
-        "delivery",
-        "base_delivery_carrier_label_manifiesto",
+
+{'name': 'Manifiesto in Base module for carrier labels',
+ 'version': '11.0.0.0.1',
+ 'author': "Factor Libre",
+ 'maintainer': 'Factor Libre,Odoo Community Association (OCA)',
+ 'category': 'Delivery',
+ 'complexity': 'normal',
+ 'depends': ['base_delivery_carrier_label'],
+ 'data': [
+    'wizard/manifest_wizard_view.xml',
     ],
-    'website': 'http://factorlibre.com',
-    'data': [
-        'security/ir.model.access.csv',
-        'view/mrw_config_view.xml',
-        'view/delivery_view.xml',
-        'view/stock_view.xml'
-    ],
-    'demo': [],
-    'installable': True,
-    'auto_install': False,
-    'license': 'AGPL-3',
-    'external_dependencies': {
-        'python': ['suds'],
-    }
-}
+ 'tests': [],
+ 'installable': True,
+ 'auto_install': False,
+ 'license': 'AGPL-3',
+ 'application': False,
+ }

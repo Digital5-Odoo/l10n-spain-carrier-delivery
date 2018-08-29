@@ -20,7 +20,9 @@
 #
 ##############################################################################
 from datetime import datetime
-from openerp import models, fields, api, exceptions, _
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 from ..webservice.tipsa_api import TipsaLogin, TipsaWebService
 
 
@@ -44,9 +46,9 @@ class StockPicking(models.Model):
     def _generate_tipsa_label(self, package_ids=None):
         self.ensure_one()
         if not self.carrier_id.tipsa_config_id:
-            raise exceptions.warning(_('No tipsa config defined in carrirer'))
+            raise warning(_('No tipsa config defined in carrirer'))
         if not self.picking_type_id.warehouse_id.partner_id:
-            raise exceptions.Warning(
+            raise Warning(
                 _('Please define an address in the %s warehouse') % (
                     self.warehouse_id.name))
         warehouse_partner = self.picking_type_id.warehouse_id.partner_id
@@ -94,8 +96,8 @@ class StockPicking(models.Model):
                 strPobDes=self.partner_id.city or '',
                 strTlfDes=self.partner_id.phone or '',
                 boDesEmail=send_mail_warning, strDesDirEmails=email_warning)
-        except Exception, e:
-            raise exceptions.Warning(e.message)
+        except Exception as e:
+            raise Warning(e)
 
         # TODO: Reembolsos, valores y portes debidos
         # dReembolso=None, dValor=None, dBaseImp=None, dImpuesto=None
@@ -106,7 +108,7 @@ class StockPicking(models.Model):
             shipping_label = tipsa_ws.client.service.ConsEtiquetaEnvio3(
                 strAlbaran=picking_ref,
                 intIdRepDet=int(tipsa_config.report_format or 90))
-        except Exception, e:
+        except Exception as e:
             raise exceptions.Warning(e.message)
 
         label = {

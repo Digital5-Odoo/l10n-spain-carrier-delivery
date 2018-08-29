@@ -2,7 +2,7 @@
 
 {
     "name": "COD and assured amount for delivery carriers",
-    "version": "0.0.1",
+    "version": "11.0.0.0.1",
     "author": "Digital5, S.L.",
     "category": "Delivery",
     "website": "http://www.digita5.es",
@@ -21,5 +21,4 @@
     "qweb": [],
     "installable": True,
     "auto_install": False,
-    "active": True
 }

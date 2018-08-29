@@ -2,7 +2,7 @@
 
 {
     "name": "Multi address for delivery carrier SEUR",
-    "version": "0.1",
+    "version": "11.0.0.0.1",
     "author": "Digital5, S.L.",
     "category": "Delivery",
     "description": """

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
     <data>
 
         <record id="view_picking_withcarrier_out_form" model="ir.ui.view">
@@ -7,14 +7,14 @@
           <field name="inherit_id" ref="base_delivery_carrier_label.view_picking_withcarrier_out_form"/>
           <field name="arch" type="xml">
             <field name="carrier_code" position="after">
-              <field name="seur_service_code" attrs="{'invisible': [('carrier_type', '!=', 'seur')]}"/>
-              <field name="seur_product_code" attrs="{'invisible': [('carrier_type', '!=', 'seur')]}"/>
+              <field name="seur_service_code" attrs="{'invisible': [('delivery_type', '!=', 'seur')]}"/>
+              <field name="seur_product_code" attrs="{'invisible': [('delivery_type', '!=', 'seur')]}"/>
             </field>
             <field name="carrier_code" position="attributes">
-                <attribute name="attrs">{'invisible': [('carrier_type', '=', 'seur')]}</attribute>
+                <attribute name="attrs">{'invisible': [('delivery_type', '=', 'seur')]}</attribute>
             </field>
           </field>
         </record>
 
     </data>
-</openerp>
+</odoo>

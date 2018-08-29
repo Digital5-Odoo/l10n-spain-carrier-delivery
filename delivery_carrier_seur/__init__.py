@@ -1,2 +1,4 @@
-import model
-import wizard
+# -*- encoding: utf-8 -*-
+
+from . import model
+from . import wizard

@@ -2,7 +2,7 @@
 
 {
     'name': 'Delivery carrier Seur Cash On Delivery',
-    'version': '0.0.1',
+    'version': '11.0.0.0.1',
     'category': 'Delivery',
     'author': 'Digital5, S.L.',
     'depends': [

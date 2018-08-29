@@ -18,8 +18,12 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from openerp import fields, models, api, exceptions, _
-from urllib2 import HTTPError
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
+from urllib.error import HTTPError
+
+
 import logging
 _logger = logging.getLogger(__name__)
 try:
@@ -51,7 +55,7 @@ class ManifestWizard(models.TransientModel):
                 if connect != 'Connection successfully':
                     raise exceptions.Warning(
                         _('Error conecting with SEUR:\n%s' % connect))
-            except HTTPError, e:
+            except HTTPError as e:
                 raise exceptions.Warning(
                     _('Error conecting with SEUR try later:\n%s' % e))
 
@@ -60,7 +64,7 @@ class ManifestWizard(models.TransientModel):
             manifiesto = False
             try:
                 manifiesto = seur_picking.manifiesto(data)
-            except HTTPError, e:
+            except HTTPError as e:
                 raise exceptions.Warning(
                     _('Error generating SEUR manifest:\n%s' % e))
 

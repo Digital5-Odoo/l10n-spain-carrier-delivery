@@ -20,11 +20,12 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api, exceptions
-from openerp.tools.translate import _
+from odoo import api, fields, models, tools, _
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import AccessError, UserError, RedirectWarning, ValidationError, Warning
 import logging
 from unidecode import unidecode
-from urllib2 import HTTPError
+from urllib.error import HTTPError
 
 _logger = logging.getLogger(__name__)
 try:
@@ -77,7 +78,6 @@ class StockPicking(models.Model):
 
     @api.onchange('carrier_id')
     def carrier_id_change(self):
-        super(StockPicking, self).carrier_id_change()
         if not self.carrier_id or self.carrier_id.type != 'seur':
             return
         carrier = self.carrier_id
@@ -88,9 +88,9 @@ class StockPicking(models.Model):
     def _generate_seur_label(self, package_ids=None):
         self.ensure_one()
         if not self.carrier_id.seur_config_id:
-            raise exceptions.Warning(_('No SEUR Config defined in carrier'))
+            raise Warning(_('No SEUR Config defined in carrier'))
         if not self.picking_type_id.warehouse_id.partner_id:
-            raise exceptions.Warning(
+            raise Warning(
                 _('Please define an address in the %s warehouse') % (
                     self.picking_type_id.warehouse_id.name))
 
@@ -120,17 +120,17 @@ class StockPicking(models.Model):
         try:
             connect = seur_picking.test_connection()
             if connect != 'Connection successfully':
-                raise exceptions.Warning(
+                raise Warning(
                     _('Error conecting with SEUR:\n%s' % connect))
-        except HTTPError, e:
-            raise exceptions.Warning(
+        except HTTPError as e:
+            raise Warning(
                 _('Error connecting with SEUR try later:\n%s') % e)
 
         data = self._get_label_data()
         tracking_ref, label, error = seur_picking.create(data)
 
         if error:
-            raise exceptions.Warning(
+            raise Warning(
                 _('Error sending label to SEUR\n%s') % error)
 
         self.carrier_tracking_ref = tracking_ref
@@ -149,7 +149,7 @@ class StockPicking(models.Model):
     def _get_label_data(self):
         partner = self.partner_id.parent_id or self.partner_id
         if not self.seur_service_code or not self.seur_product_code:
-            raise exceptions.Warning(_(
+            raise Warning(_(
                 'Please select SEUR service and product codes in picking'))
         international = False
         warehouse = self.picking_type_id and \
@@ -198,7 +198,7 @@ class StockPicking(models.Model):
         return data
 
     def warn(self, field, for_str):
-        raise exceptions.Warning(
+        raise Warning(
             _('Please, enter a %s for %s') % (field, for_str))
 
     @api.multi
